@@ -13,8 +13,8 @@
         <Label x:Name="label2" Content="Cheese" HorizontalAlignment="Left" Margin="841,404,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label x:Name="label3" Content="Meat" HorizontalAlignment="Left" Margin="468,404,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="0.502,0.173"/>
         <TextBlock x:Name="headingtextBlock" HorizontalAlignment="Left" Margin="246,164,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
-        <Label x:Name="speciallabel" Content="Special *** $2.00 Off Wheat / Meatball / Onions/ American Cheese" HorizontalAlignment="Left" Margin="166,874,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <TextBlock x:Name="subtextBlock" HorizontalAlignment="Left" Margin="513,762,0,0" Text="( Your Sub Here )" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="speciallabel" Content="Special *** $2.00 Off Foot Long /Wheat / Meatball / American Cheese" HorizontalAlignment="Left" Margin="72,866,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="subtextBlock" HorizontalAlignment="Left" Margin="126,723,0,0" Text="( Your Sub Here )" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
         <RadioButton x:Name="wheatradioButton" Content="Wheat" HorizontalAlignment="Left" Margin="162,472,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
         <RadioButton x:Name="italianRadioButton1" Content="Italian" HorizontalAlignment="Left" Margin="163,528,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
         <RadioButton x:Name="radioButton2" Content="Flat Bread (+ $.50)" HorizontalAlignment="Left" Margin="165,587,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
@@ -33,7 +33,7 @@
         <CheckBox x:Name="LettuceCheckBox2" Content="Lettuce (+ $.15)" HorizontalAlignment="Left" Margin="1283,586,0,0" VerticalAlignment="Top" FontSize="24"/>
         <CheckBox x:Name="OnioncheckBox3" Content="Red Onion ( $ .10)" HorizontalAlignment="Left" Margin="1284,635,0,0" VerticalAlignment="Top" FontSize="24"/>
         <CheckBox x:Name="AllcheckBox4" Content="All Veggies ( + $.25)" HorizontalAlignment="Left" Margin="1288,682,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="orderButton" Content="Order Here" HorizontalAlignment="Left" Margin="90,752,0,0" VerticalAlignment="Top" FontSize="48" Width="364" Click="orderButton_Click"/>
+        <Button x:Name="orderButton" Content="Order Here" HorizontalAlignment="Left" Margin="1068,880,0,0" VerticalAlignment="Top" FontSize="48" Width="364" Click="orderButton_Click"/>
 
     </Grid>
 </Window>

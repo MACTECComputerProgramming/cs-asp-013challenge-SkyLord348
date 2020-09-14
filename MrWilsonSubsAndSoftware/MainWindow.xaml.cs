@@ -153,7 +153,7 @@ namespace MrWilsonSubsAndSoftware
             // Check for Special
 
             if ((wheatradioButton.IsChecked == true)&&(MeatBallradioButton4.IsChecked == true)&&
-                (OnioncheckBox3.IsChecked== true)&&(AmericanCheckBox.IsChecked==true))
+                (footLongRadioButton3.IsChecked== true)&&(AmericanCheckBox.IsChecked==true))
             {
                 subDiscription = subDiscription + " Special**$2.00 Off ";
 
