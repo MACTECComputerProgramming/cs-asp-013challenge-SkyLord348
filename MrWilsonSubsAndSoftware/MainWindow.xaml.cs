@@ -93,11 +93,76 @@ namespace MrWilsonSubsAndSoftware
 
             //Get Cheese
 
+            if (AmericanCheckBox.IsChecked== true)
+            {
+                subDiscription = subDiscription + " American Cheese, ";
+
+                subTotalPrice = subTotalPrice + .25;
+            }
+
+            if (swissCheckBox1.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Swiss Cheese, ";
+
+                subTotalPrice = subTotalPrice + .30;
+            }
+
+            if (pepperJackCheckBox2.IsChecked == true)
+            {
+                subDiscription = subDiscription + " PepperJack Cheese, ";
+
+                subTotalPrice = subTotalPrice + .75;
+            }
+
+
+
             //Get Veggies
+
+
+
+            if(CucumberCheckBox.IsChecked == true) { subDiscription = subDiscription + " Cucumbers, "; }
+
+            if (GreenPeppercheckBox1.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Green Pepper, ";
+
+                subTotalPrice = subTotalPrice + .25;
+            }
+
+            if (LettuceCheckBox2.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Lettuce, ";
+
+                subTotalPrice = subTotalPrice + .15;
+            }
+
+            if (OnioncheckBox3.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Red Onion ";
+
+                subTotalPrice = subTotalPrice + .10;
+            }
+
+            if (AllcheckBox4.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Cucumbers, Green Pepper, Lettuce, Red Onion ";
+
+                subTotalPrice = subTotalPrice + .25;
+            }
 
             // Check for Special
 
+            if ((wheatradioButton.IsChecked == true)&&(MeatBallradioButton4.IsChecked == true)&&
+                (OnioncheckBox3.IsChecked== true)&&(AmericanCheckBox.IsChecked==true))
+            {
+                subDiscription = subDiscription + " Special**$2.00 Off ";
+
+                subTotalPrice = subTotalPrice - 2.00;
+            }
+
             //Print - Sub and Total Price
+
+            subtextBlock.Text = subDiscription + " $ " + subTotalPrice;
 
         }
     }
