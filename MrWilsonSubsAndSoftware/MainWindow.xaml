@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MrWilsonSubsAndSoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1000" Width="1700">
     <Grid>
+        <Label x:Name="headerLabel" Content="Mr. Wilson's Subs and Software " HorizontalAlignment="Left" Margin="446,67,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label x:Name="label" Content="Bread" HorizontalAlignment="Left" Margin="160,399,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label x:Name="label1" Content="Veggies" HorizontalAlignment="Left" Margin="1234,406,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label x:Name="label2" Content="Cheese" HorizontalAlignment="Left" Margin="841,404,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label x:Name="label3" Content="Meat" HorizontalAlignment="Left" Margin="468,404,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="0.502,0.173"/>
+        <TextBlock x:Name="headingtextBlock" HorizontalAlignment="Left" Margin="246,164,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="speciallabel" Content="Special *** $2.00 Off Wheat / Meatball / Onions/ American Cheese" HorizontalAlignment="Left" Margin="166,874,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <TextBlock x:Name="subtextBlock" HorizontalAlignment="Left" Margin="156,782,0,0" Text="( Your Sub Here )" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+        <RadioButton x:Name="wheatradioButton" Content="Wheat" HorizontalAlignment="Left" Margin="162,472,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
+        <RadioButton x:Name="radioButton1" Content="Italian" HorizontalAlignment="Left" Margin="163,528,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
+        <RadioButton x:Name="radioButton2" Content="Flat Bread (+ $.50)" HorizontalAlignment="Left" Margin="165,587,0,0" VerticalAlignment="Top" FontSize="24" GroupName="bread"/>
+        <RadioButton x:Name="hamradioButton" Content="Ham" HorizontalAlignment="Left" Margin="486,481,0,0" VerticalAlignment="Top" FontSize="24" GroupName="meat"/>
+        <RadioButton x:Name="ChickenradioButton3" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="489,533,0,0" VerticalAlignment="Top" FontSize="24" GroupName="meat"/>
+        <RadioButton x:Name="MeatBallradioButton4" Content="MeatBall (+ $1.00)" HorizontalAlignment="Left" Margin="485,594,0,0" VerticalAlignment="Top" FontSize="24" GroupName="meat"/>
+        <RadioButton x:Name="SteakradioButton5" Content="Steak (+ $1.50)" HorizontalAlignment="Left" Margin="489,644,0,0" VerticalAlignment="Top" FontSize="24" GroupName="meat"/>
+        <Label x:Name="label4" Content="Size Sub" HorizontalAlignment="Left" Margin="264,268,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <RadioButton x:Name="sixInchRadioButton" Content="Six Inch Sub ( $3.50 )" HorizontalAlignment="Left" Margin="532,278,0,0" VerticalAlignment="Top" GroupName="size" FontSize="36"/>
+        <RadioButton x:Name="footLongRadioButton3" Content="Foot Long Sub ( $ 5.00 )" HorizontalAlignment="Left" Margin="1032,280,0,0" VerticalAlignment="Top" GroupName="size" FontSize="36"/>
 
     </Grid>
 </Window>
