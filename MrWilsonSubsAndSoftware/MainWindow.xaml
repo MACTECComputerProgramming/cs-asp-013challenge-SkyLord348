@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="1700">
     <Grid>
+        <Image x:Name="Backgroundimage" HorizontalAlignment="Left" Height="1144" Margin="-16,-14,0,0" VerticalAlignment="Top" Width="3459" Source="/pexels-lukas-952353.jpg" Opacity="0.3"/>
+
         <Label x:Name="headerLabel" Content="Mr. Wilson's Subs and Software " HorizontalAlignment="Left" Margin="446,67,0,0" VerticalAlignment="Top" FontSize="48"/>
         <Label x:Name="label" Content="Bread" HorizontalAlignment="Left" Margin="160,399,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label x:Name="label1" Content="Veggies" HorizontalAlignment="Left" Margin="1234,406,0,0" VerticalAlignment="Top" FontSize="36"/>
@@ -33,7 +35,8 @@
         <CheckBox x:Name="LettuceCheckBox2" Content="Lettuce (+ $.15)" HorizontalAlignment="Left" Margin="1283,586,0,0" VerticalAlignment="Top" FontSize="24"/>
         <CheckBox x:Name="OnioncheckBox3" Content="Red Onion ( $ .10)" HorizontalAlignment="Left" Margin="1284,635,0,0" VerticalAlignment="Top" FontSize="24"/>
         <CheckBox x:Name="AllcheckBox4" Content="All Veggies ( + $.25)" HorizontalAlignment="Left" Margin="1288,682,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="orderButton" Content="Order Here" HorizontalAlignment="Left" Margin="1068,880,0,0" VerticalAlignment="Top" FontSize="48" Width="364" Click="orderButton_Click"/>
+        <Button x:Name="orderButton" Content="Order Here" HorizontalAlignment="Left" Margin="1068,880,0,0" VerticalAlignment="Top" FontSize="48" Width="364" Click="orderButton_Click" Background="#FFF3F3F5" Foreground="Black"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="316" Margin="5,102,0,0" VerticalAlignment="Top" Width="217" Source="/pexels-rajesh-tp-1600732.jpg"/>
 
     </Grid>
 </Window>
