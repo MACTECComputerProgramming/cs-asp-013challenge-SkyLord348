@@ -1,0 +1,38 @@
+﻿<Window x:Class="CS_013_ChallengeLPB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS_013_ChallengeLPB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="labelOutput" Content="Total" HorizontalAlignment="Left" Margin="100,175,0,0" VerticalAlignment="Top" Width="275" Height="39"/>
+        <Label x:Name="labelTitle" Content="Lucas's Sub Shop Emporium" HorizontalAlignment="Left" Margin="287,-6,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelSubSize" Content="Sub Size" HorizontalAlignment="Left" Margin="110,13,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="labelMeats" Content="Meats" HorizontalAlignment="Left" Margin="153,37,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelVeggies" Content="Veggies" HorizontalAlignment="Left" Margin="400,35,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonMeatBall" Content="Meatball (+1.00)" HorizontalAlignment="Left" Margin="150,120,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonWheat" Content="Wheat" HorizontalAlignment="Left" Margin="35,60,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonItalian" Content="Italian" Margin="35,80,714,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonFlatBread" Content="Flat Bread (+.50)" HorizontalAlignment="Left" Margin="35,100,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonSmall" Content="6 in. ($3.30)" HorizontalAlignment="Left" Margin="171,20,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonLarge" Content="12 in. ($5.00)" HorizontalAlignment="Left" Margin="268,20,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonChicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="150,60,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonPepperoni" Content="Pepperoni" HorizontalAlignment="Left" Margin="150,80,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonHam" Content="Ham" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxAmerican" Content="American (+.25)" HorizontalAlignment="Left" Margin="280,60,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxSwiss" Content="Swiss (+.30)" HorizontalAlignment="Left" Margin="280,80,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxProvolone" Content="Provolone (+.50)" HorizontalAlignment="Left" Margin="280,100,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxPepperjack" Content="Pepperjack (+.75)" HorizontalAlignment="Left" Margin="280,120,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxCucumber" Content="Cucumber" HorizontalAlignment="Left" Margin="400,60,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxGreenPepper" Content="Green Pepper (+.25)" HorizontalAlignment="Left" Margin="400,80,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxLettuce" Content="Lettuce (+.10)" HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxRedOnion" Content="Red Onion (+.15)" HorizontalAlignment="Left" Margin="400,120,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="orderButton" Content="Order Now!!" HorizontalAlignment="Left" Margin="242,237,0,0" VerticalAlignment="Top" Click="button_Click" Width="225" Height="40"/>
+        <Label x:Name="labelCheeses" Content="Cheeses" HorizontalAlignment="Left" Margin="277,35,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelBreads" Content="Breads" HorizontalAlignment="Left" Margin="46,37,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxAll" Content="All Veggies (+.50)" HorizontalAlignment="Left" Margin="400,140,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
