@@ -27,33 +27,78 @@ namespace CS_013_ChallengeLPB
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (radioButtonSmall.IsChecked == true)
+            //Variables
+
+            string subOrderDescription = "6in., ";
+
+            double totalPrice = 3.50;
+
+
+            //Get Size
+
+            if (checkBoxLarge.IsChecked == true)
             {
-                labelOutput.Content = "6 inch,";
-                
-                double x = 3.30;
-            }
-            else
-            {
-                double x = 0;
-            }
-            if (radioButtonFlatBread.IsChecked == true)
-            {
-                labelOutput.Content = "Flatbread,";
-                double x = .50;
+                totalPrice = 5.00;
+
+                subOrderDescription = "12in., ";
 
             }
-            else
+            //Get Bread
+            if (radioButtonWheat.IsChecked == true)
             {
-                double x = 0;
-            }
-            if (checkBoxProvolone.IsChecked == true)
-            {
-                labelOutput.Content = "Provolone,";
-
+                subOrderDescription = subOrderDescription + "Wheat Bread, ";
 
 
             }
+            else if (radioButtonItalian.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Italian, ";
+
+
+            }
+            else if (radioButtonFlatBread.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Flat Bread, ";
+
+                totalPrice = totalPrice + .50;
+            }
+
+
+
+            //Get Meat
+
+            if (radioButtonChicken.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Roasted Chicken, ";
+
+
+            }
+            else if (radioButtonPepperoni.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Pepperoni, ";
+
+            }
+            else if (radioButtonHam.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Ham, ";
+
+            }
+            else if (radioButtonMeatBall.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Meatball, ";
+
+                totalPrice = totalPrice + 1.00;
+
+            }
+
+            //Get Cheese
+            if (checkBoxAmerican.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "American cheese, ";
+
+                totalPrice = totalPrice + 0.25;
+
+            }
 
 
 
@@ -63,6 +108,7 @@ namespace CS_013_ChallengeLPB
 
 
 
+            //Get Veggies
 
 
 
@@ -72,6 +118,7 @@ namespace CS_013_ChallengeLPB
 
 
 
+            //Check for special
 
 
 
@@ -79,11 +126,7 @@ namespace CS_013_ChallengeLPB
 
 
 
-
-
-
-
-
+            labelOutput.Content = subOrderDescription + " $" + totalPrice;
 
         }
     }
