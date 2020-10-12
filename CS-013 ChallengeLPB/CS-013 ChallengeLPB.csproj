@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="subshopbackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="subshopbackground.jpg" />
+  </ItemGroup>
+
 </Project>
