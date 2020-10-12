@@ -99,31 +99,72 @@ namespace CS_013_ChallengeLPB
                 totalPrice = totalPrice + 0.25;
 
             }
+            else if (checkBoxSwiss.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Swiss cheese, ";
 
+                totalPrice = totalPrice + 0.30;
+            }
+            else if (checkBoxProvolone.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Provolone cheese, ";
 
+                totalPrice = totalPrice + 0.50;
+            }
+            else if (checkBoxPepperjack.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Pepperjack cheese, ";
 
-
-
-
-
+                totalPrice = totalPrice + 0.75;
+            }
 
 
             //Get Veggies
+            if (checkBoxCucumber.IsChecked== true)
+            {
+                subOrderDescription = subOrderDescription + "Cucumber";
+
+            }
+            else if (checkBoxGreenPepper.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Green Pepper";
 
 
+            }
+            else if (checkBoxLettuce.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Lettuce";
 
 
+            }
+            else if (checkBoxRedOnion.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Red Onion";
 
+
+            }
+            else if (checkBoxAll.IsChecked == true)
+            {
+                subOrderDescription = subOrderDescription + "Cucumber, Green Pepper, Lettuce, Red Onion";
+
+
+            }
 
 
 
 
             //Check for special
+            if ((radioButtonItalian.IsChecked == true)&&(radioButtonChicken.IsChecked == true)&&(checkBoxAmerican.IsChecked == true)
+                &&(checkBoxPepperjack.IsChecked == true)&&(checkBoxLettuce.IsChecked == true))
+            {
+                subOrderDescription = subOrderDescription + "**Special! $2.00 off**";
+
+                totalPrice = totalPrice - 2.0;
+            }
 
 
 
-
-
+            //Output
 
 
             labelOutput.Content = subOrderDescription + " $" + totalPrice;
