@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CS_013_ChallengeLPB</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="subshopbackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="subshopbackground.jpg" />
+  </ItemGroup>
+
+</Project>
