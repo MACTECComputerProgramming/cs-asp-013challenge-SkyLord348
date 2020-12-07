@@ -6,37 +6,36 @@
         xmlns:local="clr-namespace:CS_013_ChallengeLPB"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="subshopbackground.jpg"/>
-        </Grid.Background>
-        <Label x:Name="labelOutput" Content="Your Sub" HorizontalAlignment="Left" Margin="31,277,0,0" VerticalAlignment="Top" Width="763" Height="46" Foreground="White" FontSize="14"/>
-        <Label x:Name="labelTitle" Content="Lucas's Sub Shop Emporium" HorizontalAlignment="Left" Margin="546,2,0,0" VerticalAlignment="Top" Height="40" Width="250" FontSize="18" FontWeight="Bold" Foreground="White"/>
-        <RadioButton x:Name="radioButtonMeatBall" Content="Meatball (+1.00)" HorizontalAlignment="Left" Margin="196,201,0,0" VerticalAlignment="Top" GroupName="" Foreground="White" Height="19" Width="148" FontSize="16"/>
-        <RadioButton x:Name="radioButtonWheat" Content="Wheat" HorizontalAlignment="Left" Margin="33,124,0,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="White" Height="24" Width="74" FontSize="16"/>
-        <RadioButton x:Name="radioButtonItalian" Content="Italian" Margin="33,156,654,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="White" Height="24" FontSize="16"/>
-        <RadioButton x:Name="radioButtonFlatBread" Content="Flat Bread (+.50)" HorizontalAlignment="Left" Margin="33,188,0,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="White" Height="24" Width="148" FontSize="16"/>
-        <RadioButton x:Name="radioButtonChicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="196,121,0,0" VerticalAlignment="Top" GroupName="" Foreground="White" Height="20" Width="149" FontSize="16"/>
-        <RadioButton x:Name="radioButtonPepperoni" Content="Pepperoni" HorizontalAlignment="Left" Margin="196,148,0,0" VerticalAlignment="Top" GroupName="" Foreground="White" Height="20" Width="102" FontSize="16"/>
-        <RadioButton x:Name="radioButtonHam" Content="Ham" HorizontalAlignment="Left" Margin="196,174,0,0" VerticalAlignment="Top" GroupName="" Foreground="White" Height="20" Width="61" FontSize="16"/>
-        <CheckBox x:Name="checkBoxAmerican" Content="American (+.25)" HorizontalAlignment="Left" Margin="370,120,0,0" VerticalAlignment="Top" Foreground="White" Height="20" Width="132" FontSize="16"/>
-        <CheckBox x:Name="checkBoxSwiss" Content="Swiss (+.30)" HorizontalAlignment="Left" Margin="370,147,0,0" VerticalAlignment="Top" Foreground="White" Height="20" Width="104" FontSize="16"/>
-        <CheckBox x:Name="checkBoxProvolone" Content="Provolone (+.50)" HorizontalAlignment="Left" Margin="370,174,0,0" VerticalAlignment="Top" Foreground="White" Height="20" Width="137" FontSize="16"/>
-        <CheckBox x:Name="checkBoxPepperjack" Content="Pepperjack (+.75)" HorizontalAlignment="Left" Margin="370,200,0,0" VerticalAlignment="Top" Foreground="White" Height="21" Width="141" FontSize="16"/>
-        <CheckBox x:Name="checkBoxCucumber" Content="Cucumber" HorizontalAlignment="Left" Margin="553,121,0,0" VerticalAlignment="Top" Foreground="White" Height="20" Width="100" FontSize="16"/>
-        <CheckBox x:Name="checkBoxGreenPepper" Content="Green Pepper (+.25)" HorizontalAlignment="Left" Margin="553,148,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="169" FontSize="16"/>
-        <CheckBox x:Name="checkBoxLettuce" Content="Lettuce (+.10)" HorizontalAlignment="Left" Margin="553,172,0,0" VerticalAlignment="Top" Foreground="White" Height="19" Width="125" FontSize="16"/>
-        <CheckBox x:Name="checkBoxRedOnion" Content="Red Onion (+.15)" HorizontalAlignment="Left" Margin="553,198,0,0" VerticalAlignment="Top" Foreground="White" Height="19" Width="149" FontSize="16"/>
+    <Grid x:Name="backgroundImage" Visibility="Visible">
+        <Image Source="/subshopbackground.jpg" Opacity="0.5" StretchDirection="Both" Stretch="Fill"/>
+
+        <Label x:Name="labelOutput" Content="Your Sub" HorizontalAlignment="Left" Margin="31,277,0,0" VerticalAlignment="Top" Width="763" Height="46" Foreground="Black" FontSize="14"/>
+        <Label x:Name="labelTitle" Content="Lucas's Sub Shop Emporium" HorizontalAlignment="Left" Margin="546,2,0,0" VerticalAlignment="Top" Height="40" Width="250" FontSize="18" FontWeight="Bold" Foreground="Black"/>
+        <RadioButton x:Name="radioButtonMeatBall" Content="Meatball (+1.00)" HorizontalAlignment="Left" Margin="196,201,0,0" VerticalAlignment="Top" GroupName="" Foreground="Black" Height="19" Width="148" FontSize="16"/>
+        <RadioButton x:Name="radioButtonWheat" Content="Wheat" HorizontalAlignment="Left" Margin="33,124,0,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="Black" Height="24" Width="74" FontSize="16"/>
+        <RadioButton x:Name="radioButtonItalian" Content="Italian" Margin="33,156,654,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="Black" Height="24" FontSize="16"/>
+        <RadioButton x:Name="radioButtonFlatBread" Content="Flat Bread (+.50)" HorizontalAlignment="Left" Margin="33,188,0,0" VerticalAlignment="Top" GroupName="breadChoices" IsThreeState="True" Foreground="Black" Height="24" Width="148" FontSize="16"/>
+        <RadioButton x:Name="radioButtonChicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="196,121,0,0" VerticalAlignment="Top" GroupName="" Foreground="Black" Height="20" Width="149" FontSize="16"/>
+        <RadioButton x:Name="radioButtonPepperoni" Content="Pepperoni" HorizontalAlignment="Left" Margin="196,148,0,0" VerticalAlignment="Top" GroupName="" Foreground="Black" Height="20" Width="102" FontSize="16"/>
+        <RadioButton x:Name="radioButtonHam" Content="Ham" HorizontalAlignment="Left" Margin="196,174,0,0" VerticalAlignment="Top" GroupName="" Foreground="Black" Height="20" Width="61" FontSize="16"/>
+        <CheckBox x:Name="checkBoxAmerican" Content="American (+.25)" HorizontalAlignment="Left" Margin="370,120,0,0" VerticalAlignment="Top" Foreground="Black" Height="20" Width="132" FontSize="16"/>
+        <CheckBox x:Name="checkBoxSwiss" Content="Swiss (+.30)" HorizontalAlignment="Left" Margin="370,147,0,0" VerticalAlignment="Top" Foreground="Black" Height="20" Width="104" FontSize="16"/>
+        <CheckBox x:Name="checkBoxProvolone" Content="Provolone (+.50)" HorizontalAlignment="Left" Margin="370,174,0,0" VerticalAlignment="Top" Foreground="Black" Height="20" Width="137" FontSize="16"/>
+        <CheckBox x:Name="checkBoxPepperjack" Content="Pepperjack (+.75)" HorizontalAlignment="Left" Margin="370,200,0,0" VerticalAlignment="Top" Foreground="Black" Height="21" Width="141" FontSize="16"/>
+        <CheckBox x:Name="checkBoxCucumber" Content="Cucumber" HorizontalAlignment="Left" Margin="553,121,0,0" VerticalAlignment="Top" Foreground="Black" Height="20" Width="100" FontSize="16"/>
+        <CheckBox x:Name="checkBoxGreenPepper" Content="Green Pepper (+.25)" HorizontalAlignment="Left" Margin="553,148,0,0" VerticalAlignment="Top" Foreground="Black" Height="18" Width="169" FontSize="16"/>
+        <CheckBox x:Name="checkBoxLettuce" Content="Lettuce (+.10)" HorizontalAlignment="Left" Margin="553,172,0,0" VerticalAlignment="Top" Foreground="Black" Height="19" Width="125" FontSize="16"/>
+        <CheckBox x:Name="checkBoxRedOnion" Content="Red Onion (+.15)" HorizontalAlignment="Left" Margin="553,198,0,0" VerticalAlignment="Top" Foreground="Black" Height="19" Width="149" FontSize="16"/>
         <Button x:Name="orderButton" Content="Order Now!!" HorizontalAlignment="Left" Margin="282,340,0,0" VerticalAlignment="Top" Click="button_Click" Width="250" Height="46" Foreground="Black" Background="White" FontWeight="Bold" FontSize="18"/>
-        <CheckBox x:Name="checkBoxAll" Content="All Veggies (+.50)" HorizontalAlignment="Left" Margin="553,223,0,0" VerticalAlignment="Top" Foreground="White" Height="19" Width="151" FontSize="16"/>
-        <GroupBox x:Name="subSizeChoices" Header="Sub Sizes" HorizontalAlignment="Left" Height="62" Margin="152,36,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.499,0.01" BorderBrush="{x:Null}" Foreground="White"/>
-        <GroupBox x:Name="breadChoices" Header="Bread" HorizontalAlignment="Left" Height="108" Margin="24,104,0,0" VerticalAlignment="Top" Width="157" BorderBrush="{x:Null}" Foreground="White" FontSize="16"/>
-        <GroupBox x:Name="meatChoices" Header="Meats" HorizontalAlignment="Left" Height="125" Margin="190,100,0,0" VerticalAlignment="Top" Width="152" BorderBrush="{x:Null}" Foreground="White" FontSize="16"/>
-        <GroupBox x:Name="cheeseChoices" Header="Cheeses" HorizontalAlignment="Left" Height="128" Margin="360,99,0,0" VerticalAlignment="Top" Width="172" BorderBrush="{x:Null}" Foreground="White" FontSize="16"/>
-        <GroupBox x:Name="veggieChoiecs" Header="Veggies" HorizontalAlignment="Left" Height="152" Margin="539,97,0,0" VerticalAlignment="Top" Width="180" BorderBrush="{x:Null}" Foreground="White" FontSize="16"/>
-        <Label x:Name="sixInch" Content="6 in. ($3.30)" HorizontalAlignment="Left" Height="30" Margin="152,55,0,0" VerticalAlignment="Top" Width="94" Foreground="White" FontSize="16"/>
-        <CheckBox x:Name="checkBoxLarge" Content="12in. ($5.00)" HorizontalAlignment="Left" Margin="243,63,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
-        <TextBlock x:Name="specialOfferTextBlock" HorizontalAlignment="Left" Height="58" Margin="424,36,0,0" Text="**SPECIAL** Italian, Chicken, American and Pepperjack, Lettuce. **$2.00 OFF**" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <CheckBox x:Name="checkBoxAll" Content="All Veggies (+.50)" HorizontalAlignment="Left" Margin="553,223,0,0" VerticalAlignment="Top" Foreground="Black" Height="19" Width="151" FontSize="16"/>
+        <GroupBox x:Name="subSizeChoices" Header="Sub Sizes" HorizontalAlignment="Left" Height="62" Margin="152,36,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.499,0.01" BorderBrush="{x:Null}" Foreground="Black"/>
+        <GroupBox x:Name="breadChoices" Header="Bread" HorizontalAlignment="Left" Height="108" Margin="24,104,0,0" VerticalAlignment="Top" Width="157" BorderBrush="{x:Null}" Foreground="Black" FontSize="16"/>
+        <GroupBox x:Name="meatChoices" Header="Meats" HorizontalAlignment="Left" Height="125" Margin="190,100,0,0" VerticalAlignment="Top" Width="152" BorderBrush="{x:Null}" Foreground="Black" FontSize="16"/>
+        <GroupBox x:Name="cheeseChoices" Header="Cheeses" HorizontalAlignment="Left" Height="128" Margin="360,99,0,0" VerticalAlignment="Top" Width="172" BorderBrush="{x:Null}" Foreground="Black" FontSize="16"/>
+        <GroupBox x:Name="veggieChoiecs" Header="Veggies" HorizontalAlignment="Left" Height="152" Margin="539,97,0,0" VerticalAlignment="Top" Width="180" BorderBrush="{x:Null}" Foreground="Black" FontSize="16"/>
+        <Label x:Name="sixInch" Content="6 in. ($3.30)" HorizontalAlignment="Left" Height="30" Margin="152,55,0,0" VerticalAlignment="Top" Width="94" Foreground="Black" FontSize="16"/>
+        <CheckBox x:Name="checkBoxLarge" Content="12in. ($5.00)" HorizontalAlignment="Left" Margin="243,63,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="16"/>
+        <TextBlock x:Name="specialOfferTextBlock" HorizontalAlignment="Left" Height="58" Margin="424,36,0,0" Text="**SPECIAL** Italian, Chicken, American and Pepperjack, Lettuce. **$2.00 OFF**" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="18" FontWeight="Bold" Foreground="Black"/>
 
     </Grid>
 </Window>
